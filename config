@@ -1,0 +1,63 @@
+Build Configuration:
+WRLINUX_VERSION      = "10.21.20.4"
+WRLINUX_BRANCH       = "LTS"
+BB_VERSION           = "1.50.0"
+BUILD_SYS            = "x86_64-linux"
+DISTRO               = "wrlinux"
+DISTRO_VERSION       = "10.21.20.4"
+MACHINE              = "qemux86-64"
+DEFAULTTUNE          = "core2-64"
+TARGET_SYS           = "x86_64-wrs-linux"
+TUNE_FEATURES        = "m64 core2"
+TARGET_FPU           = ""
+lib32:  TARGET_SYS        = "x86_64-wrsmllib32-linux"
+lib32:  TUNE_FEATURES     = "m32 core2"
+wrlinux              
+wrlinux-distro       = "WRLINUX_10_21_LTS:dc42735324578b7562e4574bc0542f557ba6cc64"
+meta                 = "WRLINUX_10_21_LTS:94392d0ecd76426e3c6adcef3ced486517d37855"
+meta-python2         = "WRLINUX_10_21_LTS:800c2d3c921d679d04e393a2fb0691cd1b4344eb"
+wr-template          = "WRLINUX_10_21_LTS:5f6ae2d45f3159d1002266653ecfa7532ebc507c"
+meta-filesystems     
+meta-gnome           
+meta-initramfs       
+meta-python          
+meta-multimedia      
+meta-networking      
+meta-oe              
+meta-perl            = "WRLINUX_10_21_LTS:ae2773425f13c9af085801dcea6f9a81ecdb3b14"
+meta-realtime        = "WRLINUX_10_21_LTS:ed13b779c1aa8d6de43fc7b1b256e702008b1b92"
+meta-virtualization  = "WRLINUX_10_21_LTS:1ba157212b186b4364fead81b919aa1e273e255f"
+meta-webserver       
+meta-xfce            = "WRLINUX_10_21_LTS:ae2773425f13c9af085801dcea6f9a81ecdb3b14"
+meta-clang           = "WRLINUX_10_21_LTS:1e11aff8fed6ea84440a017bdb0b41eb8b94dc62"
+meta-dpdk            = "WRLINUX_10_21_LTS:d52a32ba7900dae3d6549061ad1576eee28e93f3"
+meta-anaconda        = "WRLINUX_10_21_LTS:a337e322fa0102fdde8ced21e2a189b2f3d20ca2"
+wrlinux-dl           = "WRLINUX_10_21_LTS:56061778057cdbe138f95537c620cc23d236a741"
+meta-efi-secure-boot 
+meta-encrypted-storage 
+meta-ids             
+meta-integrity       
+meta                 = "WRLINUX_10_21_LTS:d24ed88a31d3cdd9634a0612a369a845184e5548"
+meta-security        = "WRLINUX_10_21_LTS:d155d5d373d9564e6c908d08ff4f9b9fe455fd6d"
+meta-selinux         = "WRLINUX_10_21_LTS:76776e5d1de672f8e517d64caf95a51f1d559f84"
+meta-signing-key     
+meta-tpm             
+meta-tpm2            = "WRLINUX_10_21_LTS:d24ed88a31d3cdd9634a0612a369a845184e5548"
+oe-core-dl-3.3       = "WRLINUX_10_21_LTS:ee485ab56fa41026a77cb511459e94b9561475f2"
+meta-python2-dl-3.3  = "WRLINUX_10_21_LTS:18d880bf3424719b675a59f044edd04aa0ea4d16"
+meta-openembedded-dl-3.3 = "WRLINUX_10_21_LTS:fa1c41d89872b4e8b06e6f8753f56982fc004ae1"
+meta-realtime-dl-3.3 = "WRLINUX_10_21_LTS:92bf837dad5d968931bceff61e461c1ecff77398"
+meta-virtualization-dl-3.3 = "WRLINUX_10_21_LTS:50f6083e69d1ef171ef677aec822905f057088ca"
+meta-clang-dl        = "WRLINUX_10_21_LTS:54fcebb07183c129020ab149a06f85ab5d108448"
+meta-dpdk-dl         = "WRLINUX_10_21_LTS:374cfaa63ed5c7e795c2641f66268f650c660c82"
+meta-anaconda-dl     = "WRLINUX_10_21_LTS:d0f8f0df68e9d1ca72be414691deddf168d1e1a3"
+meta-efi-secure-boot-dl = "WRLINUX_10_21_LTS:d6ac7bf41a5f8bb999c0af9728f0acd2d85e3ebf"
+meta-encrypted-storage-dl = "WRLINUX_10_21_LTS:f6ad1001a2d21bfe9947554156336aa357c060a3"
+meta-ids-dl          = "WRLINUX_10_21_LTS:fa8c723132dda876bfcb93368fe8c88301945537"
+meta-integrity-dl    = "WRLINUX_10_21_LTS:a2c3b18b083970e763dd9fa9a462f07aa197ce2c"
+meta-security-dl     = "WRLINUX_10_21_LTS:19376b9ccb117277777a0f748c84ac69f9d1b940"
+meta-selinux-dl      = "WRLINUX_10_21_LTS:ef4b9708c245fa75d57c2e749dc5fc5c7d5c43de"
+meta-signing-key-dl  = "WRLINUX_10_21_LTS:e701d78b4cc3976aa929f2e7bcd6d92ff01e181f"
+meta-tpm-dl          = "WRLINUX_10_21_LTS:d4c3f21663838da3c812360b2a412e00fc533e84"
+meta-tpm2-dl         = "WRLINUX_10_21_LTS:d0c4453c0732ab836cc908640e9d6e9714418a54"
+local                = "master:81347e98c6556fe4af8a2f40734f5af6d8168ea8"

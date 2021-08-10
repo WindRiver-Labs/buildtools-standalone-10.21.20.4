@@ -1,0 +1,48 @@
+Prebuilt build tools
+==============================================
+
+The buildtools in this directory are used to provide specific versions of
+software to aid in the setup and use of a Wind River Linux project.
+
+To make the use of the buildtools, the binaries are automatically
+installed by setup and made available in the project as a script to be
+sourced called: environment-setup-x86_64-wrlinuxsdk-linux
+
+
+Maintenance
+-----------
+This directory is maintained by Wind River Systems, Inc.
+Contact <support@windriver.com> or your support representative for more
+information on submitting changes.
+
+
+Rebuilding of prebuilts
+-----------------------
+
+setup a new project, using --machine=qemux86-64
+create a new build directory using oe-init-build-env
+
+bitbake buildtools-tarball
+or
+bitbake buildtools-extended-tarball
+
+The result of the build is in tmp/deploy/sdk as
+
+<sdkmachine>-buildtools-nativesdk-standalone-<version>.sh
+or
+<sdkmachine>-buildtools-extended-nativesdk-standalone-<version>.sh
+
+For information on reproducing the build, see:
+
+build configuration: config
+SDK manifest in
+<sdkmachine>-buildtools-nativesdk-standalone-<version>.host.manifest
+or
+<sdkmachine>-buildtools-extended-nativesdk-standalone-<version>.host.manifest
+
+
+License
+-------
+
+For license information on components included in the archive, see the
+corresponding nativesdk recipe and source code.
